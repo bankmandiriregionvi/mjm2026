@@ -153,16 +153,6 @@
       background: linear-gradient(135deg, var(--navy) 0%, #0a1f3d 40%, #1a3a6e 100%);
     }
 
-    .hero-bg-img {
-      position: absolute;
-      inset: 0;
-      background-image: url('visual_lari.jpg');
-      background-size: cover;
-      background-position: center;
-      opacity: 0.25;
-      mix-blend-mode: luminosity;
-    }
-
     .hero-accent-top {
       position: absolute;
       top: 0; right: 0;
@@ -1325,7 +1315,10 @@
 <!-- ===== NAVBAR ===== -->
 <nav id="navbar">
   <div class="nav-logo">
-    <img src="MJM2025_-_THE_LOGO_FA-02.png" alt="MJM Logo" style="height:40px; width:auto;">
+    <div>
+      <div class="nav-logo-text">MJM 2026</div>
+      <div class="nav-logo-sub">Mandiri Jogja Marathon</div>
+    </div>
   </div>
   <button class="hamburger" id="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -1341,16 +1334,16 @@
 <!-- ===== HERO ===== -->
 <section id="hero">
   <div class="hero-bg"></div>
-  <div class="hero-bg-img"></div>
   <div class="hero-accent-top"></div>
   <div class="batik-overlay"></div>
   <div class="hero-yellow-bar"></div>
 
   <div class="hero-content">
     <div class="hero-eyebrow">Mandiri Jogja Marathon</div>
-    <div style="margin-bottom: 16px; opacity:0; animation: fadeUp 0.6s ease 0.3s forwards;">
-      <img src="LOCK_UP_MJM_2026.png" alt="MJM 2026" style="height: clamp(80px, 15vw, 160px); width:auto;">
-    </div>
+    <h1 class="hero-title">
+      <span class="mjm">MJM</span>
+      <span class="year">2026</span>
+    </h1>
     <div class="hero-tagline">More Than A Race</div>
     <div class="hero-date-badge">
       <span>21 Juni 2026</span>
@@ -1408,9 +1401,7 @@
       <p>Mandiri Jogja Marathon 2026 menghadirkan pengalaman berlari yang tak terlupakan melewati landmark ikonik Yogyakarta — dari kemegahan Prambanan hingga keagungan Kraton, dengan rute yang telah tersertifikasi World Athletics & AIMS.</p>
       <p>Lebih dari sekadar lomba lari, MJM adalah perayaan budaya, semangat, dan kebersamaan. <strong>More Than A Race.</strong></p>
     </div>
-    <div>
-      <img src="PRAMBANAN.jpg" alt="Prambanan" style="width:100%; border-radius:12px; margin-bottom:16px; display:block;">
-      <div class="info-cards">
+    <div class="info-cards">
       <div class="info-card">
         <div class="info-card-icon">📅</div>
         <div class="info-card-label">Tanggal</div>
@@ -1432,18 +1423,6 @@
         <div class="info-card-value">320 Pelari</div>
       </div>
     </div>
-    </div>
-  </div>
-</section>
-
-<!-- MEDALI SECTION -->
-<section style="background: #050e1d; padding: 60px 40px; text-align:center;">
-  <div style="max-width:900px; margin:0 auto;">
-    <div class="section-eyebrow">Koleksi Medali</div>
-    <h2 class="section-title">Medali Legendaris MJM</h2>
-    <div class="section-divider" style="margin: 0 auto 32px;"></div>
-    <p style="color:rgba(255,255,255,0.6); margin-bottom:40px; font-size:16px; line-height:1.7;">Setiap tahun menghadirkan desain medali eksklusif yang terinspirasi dari landmark ikonik Yogyakarta. Koleksi 2025–2029 siap menemanimu di finish line.</p>
-    <img src="Medali.jpg" alt="Medali MJM" style="max-width:100%; border-radius:16px; box-shadow: 0 20px 60px rgba(0,0,0,0.5);">
   </div>
 </section>
 
@@ -1619,8 +1598,8 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div>
-        <img src="MJM2025_-_THE_LOGO_FA-01.png" alt="MJM Logo" style="height:50px; width:auto; margin-bottom:16px; display:block;">
-        <div class="footer-brand-sub">Mandiri Jogja Marathon 2026</div>
+        <div class="footer-brand-name">MJM 2026</div>
+        <div class="footer-brand-sub">Mandiri Jogja Marathon</div>
         <p class="footer-desc">Event lari internasional bersertifikasi World Athletics yang memadukan semangat olahraga dengan keindahan budaya Yogyakarta.</p>
       </div>
       <div>
